@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../fonts/OpenSans-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--brown);
+}
+
+:root {
+  --h1: "OpenSans-Bold";
+  --h2: "OpenSans-SemiBold";
+  --title: "OpenSans-Medium";
+  --text: "OpenSans-Regular";
+  --brown: #231d1d;
+  --total-white: #ffffff;
+  --blue: #1c58df;
+  --dark-grey: #2b2b2b;
+}/*# sourceMappingURL=style.css.map */
