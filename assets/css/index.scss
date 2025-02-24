@@ -57,6 +57,8 @@
                 }
 
                 .banner_button-1 {
+                    display: flex;
+                    gap: 20px;
                     border: 1px solid var(--total-white);
                     font-family: var(--title);
                 }
@@ -104,7 +106,8 @@
                         line-height: 48px;
                     }
                     a {
-                        display: block;
+                        display: flex;
+                        gap: 20px;
                         line-height: 1;
                         font-size: 18px;
                         padding: 20px 40px;
@@ -166,11 +169,16 @@
             flex-wrap: wrap;
             font-family: var(--text);
             font-size: 24px;
-            gap: 30px;
+            gap: 40px;
             .contact_details-li {
                 display: flex;
                 list-style: none;
-                i::before {}
+                gap: 20px;
+                align-items: center;  
+                i {
+                    transform: scaleX(-1);
+                    color: var(--blue);
+                }
             }
         }
 

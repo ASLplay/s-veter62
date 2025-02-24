@@ -49,14 +49,19 @@
   gap: 40px;
   padding: 10px;
 }
+.header .contacts .telephone_icon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 .header .contacts .telephone_icon .phone_icon a {
   border-radius: 100%;
   background: var(--blue);
+  padding: 12px;
 }
-.header .contacts .telephone_icon .phone_icon a::before {
-  content: "";
-  height: 18px;
-  width: 18px;
+.header .contacts .telephone_icon .phone_icon a i {
+  font-size: 18px;
+  transform: scaleX(-1);
 }
 .header .contacts .telephone_icon .phone_number {
   display: flex;
@@ -71,7 +76,9 @@
   font-family: var(--text);
   font-size: 14px;
 }
-.header .contacts .sign_up-button a {
+.header .contacts .sign_up-button {
+  display: flex;
+  gap: 10px;
   background-color: var(--blue);
   font-family: var(--title);
   text-transform: uppercase;
@@ -80,9 +87,4 @@
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 4px;
-}
-.header .contacts .sign_up-button a::after {
-  content: "";
-  height: 18px;
-  width: 18px;
 }/*# sourceMappingURL=header.css.map */

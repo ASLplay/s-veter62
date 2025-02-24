@@ -54,6 +54,8 @@
   border-radius: 5px;
 }
 .banner .banner_item .banner_content .banner_button .banner_button-1 {
+  display: flex;
+  gap: 20px;
   border: 1px solid var(--total-white);
   font-family: var(--title);
 }
@@ -102,7 +104,8 @@
   line-height: 48px;
 }
 .services .services_item .services_grid .service .service_item a {
-  display: block;
+  display: flex;
+  gap: 20px;
   line-height: 1;
   font-size: 18px;
   padding: 20px 40px;
@@ -157,11 +160,17 @@
   flex-wrap: wrap;
   font-family: var(--text);
   font-size: 24px;
-  gap: 30px;
+  gap: 40px;
 }
 .contact .contact_details .contact_details-ul .contact_details-li {
   display: flex;
   list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+.contact .contact_details .contact_details-ul .contact_details-li i {
+  transform: scaleX(-1);
+  color: var(--blue);
 }
 .contact .maps {
   display: flex;
