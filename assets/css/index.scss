@@ -38,22 +38,41 @@
             flex-direction: column;
             gap: 55px;
 
+            @media(max-width: 768px) {
+                padding: 200px 10px 10px;
+                width: 100%;
+            }
+
             h1 {
                 font-size: 45px;
                 font-family: var(--h1);
                 text-transform: uppercase;
                 line-height: 60px;
+
+                @media(max-width: 1024px) {
+                    font-size: 35px;
+                }
+
+                @media(max-width: 768px) {
+                    font-size: 28px;
+                    line-height: 1.5;
+                }
             }
 
             .banner_button {
                 display: flex;
                 gap: 30px;
 
+                @media(max-width: 768px) {
+                    flex-direction: column;
+                }
+
                 a {
                     line-height: 1;
                     font-size: 18px;
                     padding: 20px 40px;
                     border-radius: 5px;
+
                 }
 
                 .banner_button-1 {
@@ -61,10 +80,21 @@
                     gap: 20px;
                     border: 1px solid var(--total-white);
                     font-family: var(--title);
+
+                    @media(max-width: 768px) {
+                        justify-content: center;
+                    }
                 }
+
                 .banner_button-2 {
+
                     background: var(--blue);
                     font-family: var(--title);
+
+                    @media(max-width: 768px) {
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -78,14 +108,17 @@
         max-width: 1240px;
         display: flex;
         flex-direction: column;
+
         .services_grid {
             padding: 50px 0;
             display: flex;
             gap: 100px;
             flex-direction: column;
+
             .service {
                 display: flex;
                 gap: 40px;
+
                 img {
                     border-radius: 20px;
                     height: 300px;
@@ -93,18 +126,26 @@
                     object-fit: cover;
                     object-position: center;
                 }
+
                 .service_item {
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
                     align-items: flex-start;
                     justify-content: center;
-                    p{
+
+                    p {
                         text-transform: uppercase;
                         font-size: 35px;
                         font-family: var(--h2);
                         line-height: 48px;
+
+                        @media (max-width:1024px) {
+                            font-size: 25px;
+                            line-height: 1.4;
+                        }
                     }
+
                     a {
                         display: flex;
                         gap: 20px;
@@ -124,34 +165,48 @@
 
 .about {
     padding-top: 140px;
+
     .about_item {
         margin: auto;
         padding: 0 10px;
         max-width: 1240px;
         display: flex;
         flex-direction: column;
+
         .about_text {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
             p {
                 font-size: 35px;
                 font-family: var(--text);
+
+                @media (max-width:1024px) {
+                    font-size: 25px;
+                    padding: 0 10px;
+                }
             }
         }
     }
 }
 
-.vacancies{
+.vacancies {
     max-width: 1240px;
     padding: 0 10px;
     padding-top: 140px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    p{
+
+    p {
         font-family: var(--text);
         font-size: 35px;
+
+        @media (max-width:1024px) {
+            font-size: 25px;
+            padding: 0 10px;
+        }
     }
 }
 
@@ -170,11 +225,13 @@
             font-family: var(--text);
             font-size: 24px;
             gap: 40px;
+
             .contact_details-li {
                 display: flex;
                 list-style: none;
                 gap: 20px;
-                align-items: center;  
+                align-items: center;
+
                 i {
                     transform: scaleX(-1);
                     color: var(--blue);

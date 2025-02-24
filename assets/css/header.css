@@ -2,10 +2,15 @@
   z-index: 999;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   padding: 10px;
   display: flex;
-  background-color: rgba(35, 29, 29, 0.368627451);
+  background-color: hsla(0, 9%, 13%, 0.369);
+}
+@media (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+  }
 }
 .header .logo {
   display: flex;
@@ -13,6 +18,11 @@
   width: 22%;
   padding: 10px;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .header .logo {
+    width: 90%;
+  }
 }
 .header .logo svg {
   width: 50px;
@@ -28,6 +38,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .header .nav {
+    display: none;
+    justify-content: space-between;
+  }
 }
 .header .nav a {
   margin: 0 10px;
@@ -49,6 +66,13 @@
   gap: 40px;
   padding: 10px;
 }
+@media (max-width: 1024px) {
+  .header .contacts {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+  }
+}
 .header .contacts .telephone_icon {
   display: flex;
   gap: 20px;
@@ -68,13 +92,28 @@
   flex-direction: column;
   text-align: right;
 }
+@media (max-width: 768px) {
+  .header .contacts .telephone_icon .phone_number {
+    display: none;
+  }
+}
 .header .contacts .telephone_icon .phone_number .phone_number-a {
   font-size: 22px;
   font-family: var(--h2);
 }
+@media (max-width: 1024px) {
+  .header .contacts .telephone_icon .phone_number .phone_number-a {
+    font-size: 20px;
+  }
+}
 .header .contacts .telephone_icon .phone_number .phone_number-p {
   font-family: var(--text);
   font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .header .contacts .telephone_icon .phone_number .phone_number-p {
+    font-size: 12px;
+  }
 }
 .header .contacts .sign_up-button {
   display: flex;
@@ -87,4 +126,14 @@
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 4px;
+}
+@media (max-width: 1024px) {
+  .header .contacts .sign_up-button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .header .contacts .sign_up-button {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
