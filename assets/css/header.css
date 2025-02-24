@@ -1,1 +1,33 @@
-/*# sourceMappingURL=header.css.map */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  background-color: rgba(35, 29, 29, 0.368627451);
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  width: 22%;
+  padding: 10px;
+  gap: 20px;
+}
+.header .logo svg {
+  width: 50px;
+  height: 50px;
+}
+.header .logo span {
+  color: var(--total-white);
+  font-family: var(--h1);
+  font-size: 20px;
+}
+.header .nav {
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+.header .nav a {
+  padding: 13px 20px;
+  font-family: var(--h2);
+}/*# sourceMappingURL=header.css.map */
