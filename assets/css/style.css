@@ -28,6 +28,7 @@
 
 html {
   background: var(--brown);
+  scroll-behavior: smooth;
 }
 
 :root {

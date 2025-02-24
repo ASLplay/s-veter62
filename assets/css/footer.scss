@@ -1,74 +1,12 @@
-.footer {}
-
-.vacancies{
-    margin: 0 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 0;
-    h2{
-        font-size: 120px;
-        font-family: var(--h2);
-        color: var(--dark-grey);
-        text-transform: uppercase;
-    }
-    p{
-        font-family: var(--text);
-        font-size: 35px;
-    }
-}
-
-.contact {
-    margin: 0 300px;
-    display: flex;
-
-    flex-direction: column;
-
-    h2 {
-        font-size: 120px;
-        font-family: var(--h2);
-        color: var(--dark-grey);
-        text-transform: uppercase;
-    }
-
-    .contact_details {
-        .contact_details-ul {
-            display: flex;
-            flex-wrap: wrap;
-            font-family: var(--text);
-            font-size: 24px;
-            padding: 50px 0;
-            
-            .contact_details-li {
-                display: flex;
-                list-style: none;
-                gap: 0px;
-
-                i::before {}
-            }
-        }
-
-    }
-
-    .maps {
-        display: flex;
-        width: 100%;
-        padding-bottom: 140px;
-
-        iframe {
-            width: 1240px;
-            height: 520px;
-            margin: auto;
-            border-radius: 10px;
-        }
-    }
-}
-
 .footer_text {
+    max-width: 1240px;
+    padding: 30px 10px;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     font-family: var(--text);
     justify-content: space-between;
-    margin: 0 330px;
-    padding: 0 0 20px 0;
 
     .footer_text-a {
         a {

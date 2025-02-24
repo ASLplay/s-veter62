@@ -1,61 +1,12 @@
-.vacancies {
-  margin: 0 300px;
-  display: flex;
-  flex-direction: column;
-  padding: 70px 0;
-}
-.vacancies h2 {
-  font-size: 120px;
-  font-family: var(--h2);
-  color: var(--dark-grey);
-  text-transform: uppercase;
-}
-.vacancies p {
-  font-family: var(--text);
-  font-size: 35px;
-}
-
-.contact {
-  margin: 0 300px;
-  display: flex;
-  flex-direction: column;
-}
-.contact h2 {
-  font-size: 120px;
-  font-family: var(--h2);
-  color: var(--dark-grey);
-  text-transform: uppercase;
-}
-.contact .contact_details .contact_details-ul {
+.footer_text {
+  max-width: 1240px;
+  padding: 30px 10px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  font-family: var(--text);
-  font-size: 24px;
-  padding: 50px 0;
-}
-.contact .contact_details .contact_details-ul .contact_details-li {
-  display: flex;
-  list-style: none;
-  gap: 0px;
-}
-.contact .maps {
-  display: flex;
-  width: 100%;
-  padding-bottom: 140px;
-}
-.contact .maps iframe {
-  width: 1240px;
-  height: 520px;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.footer_text {
-  display: flex;
+  gap: 20px;
   font-family: var(--text);
   justify-content: space-between;
-  margin: 0 330px;
-  padding: 0 0 20px 0;
 }
 .footer_text .footer_text-a a {
   color: var(--blue);

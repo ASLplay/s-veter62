@@ -1,4 +1,5 @@
 .header {
+    z-index: 999;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,32 +26,74 @@
         width: 33%;
         display: flex;
         align-items: center;
+        justify-content: center;
         a {
+            margin: 0 10px;
             padding: 13px 20px;
             font-family: var(--h2);
+            border-bottom: 1px solid #ffffff00;
+            transition-duration: 0.3s;
+
+            &:hover {
+                color: var(--blue);
+                border-bottom: 1px solid var(--blue);
+                transition-duration: 0.3s;
+            }
         }
     }
     .contacts {
+        display: flex;
+        width: 45%;
+        justify-content: end;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+        
         .telephone_icon {
             .phone_icon {
                 a {
+                    border-radius: 100%;
+                    background: var(--blue);
 
+                    &::before {
+                        content: "";
+                        height: 18px;
+                        width: 18px;
+                    }
                 }
             }
 
             .phone_number {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
                 .phone_number-a {
-
+                    font-size: 22px;
+                    font-family: var(--h2);
                 }
                 .phone_number-p {
-
+                    font-family: var(--text);
+                    font-size: 14px;
                 }
             }
         }
 
         .sign_up-button {
             a {
+                background-color: var(--blue);
+                font-family: var(--title);
+                text-transform: uppercase;
+                line-height: 1;
+                display: flex;
+                font-size: 16px;
+                padding: 15px 30px;
+                border-radius: 4px;
 
+                &::after {
+                    content: "";
+                    height: 18px;
+                    width: 18px;
+                }
             }
         }
     }
