@@ -54,7 +54,6 @@
             display: flex;
             gap: 15px;
             align-items: center;
-            // margin-right: 15px;
             .phone_icon {
                 a {
                     border-radius: 100%;
@@ -97,6 +96,11 @@
             padding: 15px 30px;
             border-radius: 4px;
             a {
+                svg{
+                    fill: var(--total-white);
+                    width: 18px;
+                    height: 18px;
+                }
             }
         }
     }
