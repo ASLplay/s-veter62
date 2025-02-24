@@ -3,15 +3,16 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     background-color: #231D1D5E;
+    height: 100px;
+    align-items: center;
     .logo {
         display: flex;
-        align-items: center;
         width: 22%;
-        padding: 10px;
         gap: 20px;
+        height: 55px;
         svg{
             width: 50px;
             height: 50px;
@@ -20,6 +21,7 @@
             color: var(--total-white);
             font-family: var(--h1);
             font-size: 20px;
+            align-self: center;
         }
     }
     .nav {
@@ -47,12 +49,12 @@
         justify-content: end;
         align-items: center;
         gap: 40px;
-        padding: 10px;
         
         .telephone_icon {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
+            // margin-right: 15px;
             .phone_icon {
                 a {
                     border-radius: 100%;
@@ -73,10 +75,12 @@
                 .phone_number-a {
                     font-size: 22px;
                     font-family: var(--h2);
+                    line-height: 1.5;
                 }
                 .phone_number-p {
                     font-family: var(--text);
                     font-size: 14px;
+                    line-height: 1.5;
                 }
             }
         }

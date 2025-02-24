@@ -3,16 +3,17 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   background-color: rgba(35, 29, 29, 0.368627451);
+  height: 100px;
+  align-items: center;
 }
 .header .logo {
   display: flex;
-  align-items: center;
   width: 22%;
-  padding: 10px;
   gap: 20px;
+  height: 55px;
 }
 .header .logo svg {
   width: 50px;
@@ -22,6 +23,7 @@
   color: var(--total-white);
   font-family: var(--h1);
   font-size: 20px;
+  align-self: center;
 }
 .header .nav {
   width: 33%;
@@ -47,11 +49,10 @@
   justify-content: end;
   align-items: center;
   gap: 40px;
-  padding: 10px;
 }
 .header .contacts .telephone_icon {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 .header .contacts .telephone_icon .phone_icon a {
@@ -71,10 +72,12 @@
 .header .contacts .telephone_icon .phone_number .phone_number-a {
   font-size: 22px;
   font-family: var(--h2);
+  line-height: 1.5;
 }
 .header .contacts .telephone_icon .phone_number .phone_number-p {
   font-family: var(--text);
   font-size: 14px;
+  line-height: 1.5;
 }
 .header .contacts .sign_up-button {
   display: flex;

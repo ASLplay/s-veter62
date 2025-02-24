@@ -3,6 +3,7 @@
     text-transform: uppercase;
     font-size: 120px;
     font-family: var(--h2);
+    padding: 10px 0;
 }
 
 .banner {
@@ -58,7 +59,7 @@
 
                 .banner_button-1 {
                     display: flex;
-                    gap: 20px;
+                    gap: 15px;
                     border: 1px solid var(--total-white);
                     font-family: var(--title);
                 }
@@ -72,6 +73,7 @@
 }
 
 .services {
+    padding-top: 20px;
     .services_item {
         padding: 0 10px;
         margin: auto;
@@ -81,11 +83,12 @@
         .services_grid {
             padding: 50px 0;
             display: flex;
-            gap: 100px;
             flex-direction: column;
+            gap: 80px;
             .service {
                 display: flex;
-                gap: 40px;
+                padding: 20px 0;
+                gap: 50px;
                 img {
                     border-radius: 20px;
                     height: 300px;
@@ -107,7 +110,7 @@
                     }
                     a {
                         display: flex;
-                        gap: 20px;
+                        gap: 15px;
                         line-height: 1;
                         font-size: 18px;
                         padding: 20px 40px;
@@ -123,7 +126,7 @@
 }
 
 .about {
-    padding-top: 140px;
+    padding-top: 100px;
     .about_item {
         margin: auto;
         padding: 0 10px;
@@ -135,6 +138,7 @@
             flex-direction: column;
             gap: 10px;
             p {
+                line-height: 1.5;
                 font-size: 35px;
                 font-family: var(--text);
             }
@@ -145,11 +149,12 @@
 .vacancies{
     max-width: 1240px;
     padding: 0 10px;
-    padding-top: 140px;
+    padding-top: 130px;
     margin: auto;
     display: flex;
     flex-direction: column;
     p{
+        line-height: 1.5;
         font-family: var(--text);
         font-size: 35px;
     }
@@ -158,7 +163,7 @@
 .contact {
     max-width: 1240px;
     padding: 0 10px;
-    padding-top: 140px;
+    padding-top: 170px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -173,7 +178,7 @@
             .contact_details-li {
                 display: flex;
                 list-style: none;
-                gap: 20px;
+                gap: 30px;
                 align-items: center;  
                 i {
                     transform: scaleX(-1);
@@ -186,11 +191,11 @@
 
     .maps {
         display: flex;
-        width: 100%;
-        padding: 50px 0 140px;
-
+        width: 1240px;
+        padding-top: 50px;
         iframe {
-            width: 1240px;
+            width: 100%;
+            height: 500px;
             height: 520px;
             margin: auto;
             border-radius: 10px;

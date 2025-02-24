@@ -1,21 +1,21 @@
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("../fonts/OpenSans-Regular.ttf");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "OpenSans-Medium";
-  src: url("../fonts/OpenSans-Medium.ttf");
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 @font-face {
   font-family: "OpenSans-SemiBold";
-  src: url("../fonts/OpenSans-SemiBold.ttf");
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("../fonts/OpenSans-Bold.ttf");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 * {
@@ -40,4 +40,4 @@ html {
   --total-white: #ffffff;
   --blue: #1c58df;
   --dark-grey: #2b2b2b;
-}/*# sourceMappingURL=style.css.map */
+}
