@@ -24,7 +24,7 @@
 }
 .banner:before {
   content: "";
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.11) 0%, var(--brown) 100%);
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.1098039216) 0%, var(--brown) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -54,6 +54,7 @@
   }
 }
 .banner .banner_item .banner_content h1 {
+  transition-duration: 0.3s;
   font-size: 45px;
   font-family: var(--h1);
   text-transform: uppercase;
