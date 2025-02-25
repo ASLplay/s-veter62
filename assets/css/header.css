@@ -9,11 +9,32 @@
   height: 100px;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+  }
+}
 .header .logo {
   display: flex;
   width: 22%;
   gap: 20px;
   height: 55px;
+}
+@media (max-width: 1024px) {
+  .header .logo {
+    width: 30%;
+  }
+}
+@media (max-width: 760px) {
+  .header .logo {
+    width: 60%;
+    gap: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .header .logo {
+    width: 90%;
+  }
 }
 .header .logo svg {
   width: 50px;
@@ -25,11 +46,21 @@
   font-size: 20px;
   align-self: center;
 }
+@media (max-width: 760px) {
+  .header .logo span {
+    font-size: 18px;
+  }
+}
 .header .nav {
   width: 33%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .header .nav {
+    display: none;
+  }
 }
 .header .nav a {
   margin: 0 10px;
@@ -50,6 +81,17 @@
   align-items: center;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .header .contacts {
+    width: 60%;
+  }
+}
+@media (max-width: 760px) {
+  .header .contacts {
+    width: 10%;
+    display: block;
+  }
+}
 .header .contacts .telephone_icon {
   display: flex;
   gap: 15px;
@@ -60,6 +102,11 @@
   background: var(--blue);
   padding: 12px;
 }
+@media (max-width: 760px) {
+  .header .contacts .telephone_icon .phone_icon a {
+    padding: 14px;
+  }
+}
 .header .contacts .telephone_icon .phone_icon a i {
   font-size: 18px;
   transform: scaleX(-1);
@@ -69,15 +116,30 @@
   flex-direction: column;
   text-align: right;
 }
+@media (max-width: 760px) {
+  .header .contacts .telephone_icon .phone_number {
+    display: none;
+  }
+}
 .header .contacts .telephone_icon .phone_number .phone_number-a {
   font-size: 22px;
   font-family: var(--h2);
   line-height: 1.5;
 }
+@media (max-width: 1024px) {
+  .header .contacts .telephone_icon .phone_number .phone_number-a {
+    font-size: 20px;
+  }
+}
 .header .contacts .telephone_icon .phone_number .phone_number-p {
   font-family: var(--text);
   font-size: 14px;
   line-height: 1.5;
+}
+@media (max-width: 1024px) {
+  .header .contacts .telephone_icon .phone_number .phone_number-p {
+    font-size: 12px;
+  }
 }
 .header .contacts .sign_up-button {
   display: flex;
@@ -90,6 +152,16 @@
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 4px;
+}
+@media (max-width: 1024px) {
+  .header .contacts .sign_up-button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .header .contacts .sign_up-button {
+    display: none;
+  }
 }
 .header .contacts .sign_up-button a svg {
   fill: var(--total-white);
