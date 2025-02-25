@@ -18,19 +18,18 @@
 
 .banner {
   height: 100vh;
-  background: url("../image/other/banner.webp");
-  width: 100%;
+  min-height: 620px;
+  background: url("../image/other/banner.webp") center/cover no-repeat;
   position: relative;
-  background-position: center center;
-  background-size: cover;
 }
 .banner:before {
   content: "";
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.1098039216) 0%, var(--brown) 100%);
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.11) 0%, var(--brown) 100%);
   position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
 }
 .banner .banner_item {
@@ -40,11 +39,10 @@
   max-width: 1240px;
   height: 100%;
   display: flex;
-  justify-content: left;
   align-items: center;
 }
 .banner .banner_item .banner_content {
-  padding: 100px 20px 20px;
+  padding: 20px;
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -94,23 +92,23 @@
   padding: 20px 40px;
   border-radius: 5px;
 }
-.banner .banner_item .banner_content .banner_button .banner_button-1 {
+.banner .banner_item .banner_content .banner_button a.banner_button-1 {
   display: flex;
   gap: 15px;
   border: 1px solid var(--total-white);
   font-family: var(--title);
 }
 @media (max-width: 760px) {
-  .banner .banner_item .banner_content .banner_button .banner_button-1 {
+  .banner .banner_item .banner_content .banner_button a.banner_button-1 {
     justify-content: center;
   }
 }
-.banner .banner_item .banner_content .banner_button .banner_button-2 {
+.banner .banner_item .banner_content .banner_button a.banner_button-2 {
   background: var(--blue);
   font-family: var(--title);
 }
 @media (max-width: 760px) {
-  .banner .banner_item .banner_content .banner_button .banner_button-2 {
+  .banner .banner_item .banner_content .banner_button a.banner_button-2 {
     display: flex;
     justify-content: center;
   }
