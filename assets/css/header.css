@@ -2,14 +2,14 @@
   z-index: 999;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   display: flex;
   background-color: rgba(35, 29, 29, 0.368627451);
   height: 100px;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .header {
     justify-content: space-between;
   }
@@ -20,20 +20,9 @@
   gap: 20px;
   height: 55px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .header .logo {
-    width: 30%;
-  }
-}
-@media (max-width: 760px) {
-  .header .logo {
-    width: 60%;
-    gap: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .header .logo {
-    width: 90%;
+    width: auto;
   }
 }
 .header .logo svg {
@@ -45,6 +34,7 @@
   font-family: var(--h1);
   font-size: 20px;
   align-self: center;
+  text-wrap: nowrap;
 }
 @media (max-width: 760px) {
   .header .logo span {
@@ -55,9 +45,9 @@
   width: 33%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .header .nav {
     display: none;
   }
@@ -68,6 +58,18 @@
   font-family: var(--h2);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   transition-duration: 0.3s;
+}
+@media (max-width: 1550px) {
+  .header .nav a {
+    margin: 0 5px;
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .header .nav a {
+    margin: 0 5px;
+    padding: 7px 10px;
+  }
 }
 .header .nav a:hover {
   color: var(--blue);
@@ -86,14 +88,9 @@
   align-items: center;
   gap: 40px;
 }
-@media (max-width: 768px) {
-  .header .contacts {
-    width: 60%;
-  }
-}
 @media (max-width: 760px) {
   .header .contacts {
-    width: 10%;
+    width: auto;
     display: block;
   }
 }
@@ -130,6 +127,7 @@
   font-size: 22px;
   font-family: var(--h2);
   line-height: 1.5;
+  text-wrap: nowrap;
 }
 @media (max-width: 1024px) {
   .header .contacts .telephone_icon .phone_number .phone_number-a {
@@ -140,6 +138,7 @@
   font-family: var(--text);
   font-size: 14px;
   line-height: 1.5;
+  text-wrap: nowrap;
 }
 @media (max-width: 1024px) {
   .header .contacts .telephone_icon .phone_number .phone_number-p {
@@ -152,16 +151,10 @@
   background-color: var(--blue);
   font-family: var(--title);
   text-transform: uppercase;
-  line-height: 1;
   display: flex;
-  font-size: 16px;
   padding: 15px 30px;
   border-radius: 4px;
-}
-@media (max-width: 1024px) {
-  .header .contacts .sign_up-button {
-    font-size: 12px;
-  }
+  font: var(--font-button);
 }
 @media (max-width: 760px) {
   .header .contacts .sign_up-button {

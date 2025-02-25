@@ -2,59 +2,71 @@
     z-index: 999;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     padding: 20px;
     display: flex;
     background-color: #231D1D5E;
     height: 100px;
     align-items: center;
-    @media (max-width:1024px) {
+
+    @media (max-width:1240px) {
         justify-content: space-between;
-        }
+    }
 
     .logo {
         display: flex;
         width: 22%;
         gap: 20px;
         height: 55px;
-        @media (max-width:1024px) {
-            width: 30%;   
+
+        @media (max-width:1240px) {
+            width: auto;
         }
-        @media (max-width:760px) {
-            width: 60%; 
-            gap: 10px;       
-        }
-        @media (max-width:500px) {
-            width: 90%;
-        }
-        svg{
+
+        svg {
             width: 50px;
             height: 50px;
         }
+
         span {
             color: var(--total-white);
             font-family: var(--h1);
             font-size: 20px;
             align-self: center;
+            text-wrap: nowrap;
+
             @media (max-width:760px) {
-                font-size: 18px;       
+                font-size: 18px;
             }
         }
     }
+
     .nav {
         width: 33%;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        @media (max-width:1024px) {
-        display: none;
+        flex-wrap: nowrap;
+
+        @media (max-width:1240px) {
+            display: none;
         }
+
         a {
             margin: 0 10px;
             padding: 13px 20px;
             font-family: var(--h2);
             border-bottom: 1px solid #ffffff00;
             transition-duration: 0.3s;
+
+            @media (max-width: 1550px) {
+                margin: 0 5px;
+                padding: 7px 10px;
+            }
+
+            @media (max-width: 1200px) {
+                margin: 0 5px;
+                padding: 7px 10px;
+            }
 
             &:hover {
                 color: var(--blue);
@@ -69,17 +81,16 @@
             transition-duration: 0.3s;
         }
     }
+
     .contacts {
         display: flex;
         width: 45%;
         justify-content: end;
         align-items: center;
         gap: 40px;
-        @media (max-width:768px) {
-           width: 60%;
-        }
+
         @media (max-width:760px) {
-            width: 10%;
+            width: auto;
             display: block;
         }
 
@@ -87,16 +98,18 @@
             display: flex;
             gap: 15px;
             align-items: center;
+
             .phone_icon {
                 a {
                     border-radius: 100%;
                     background: var(--blue);
                     padding: 12px;
+
                     @media (max-width:760px) {
                         padding: 14px;
                     }
 
-                    i{
+                    i {
                         font-size: 18px;
                         transform: scaleX(-1);
                     }
@@ -107,23 +120,30 @@
                 display: flex;
                 flex-direction: column;
                 text-align: right;
+
                 @media (max-width:760px) {
-                      display: none;
+                    display: none;
                 }
+
                 .phone_number-a {
                     font-size: 22px;
                     font-family: var(--h2);
                     line-height: 1.5;
+                    text-wrap: nowrap;
+
                     @media (max-width:1024px) {
-                        font-size: 20px;  
+                        font-size: 20px;
                     }
                 }
+
                 .phone_number-p {
                     font-family: var(--text);
                     font-size: 14px;
                     line-height: 1.5;
+                    text-wrap: nowrap;
+
                     @media (max-width:1024px) {
-                        font-size: 12px;  
+                        font-size: 12px;
                     }
                 }
             }
@@ -135,19 +155,18 @@
             background-color: var(--blue);
             font-family: var(--title);
             text-transform: uppercase;
-            line-height: 1;
             display: flex;
-            font-size: 16px;
             padding: 15px 30px;
             border-radius: 4px;
-            @media (max-width:1024px) {
-                font-size: 12px;   
-            }
+
+            font: var(--font-button);
+
             @media (max-width:760px) {
-                display: none; 
+                display: none;
             }
+
             a {
-                svg{
+                svg {
                     fill: var(--total-white);
                     width: 18px;
                     height: 18px;

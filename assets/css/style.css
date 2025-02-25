@@ -36,8 +36,20 @@ html {
   --h2: "OpenSans-SemiBold";
   --title: "OpenSans-Medium";
   --text: "OpenSans-Regular";
+
+  --font-text: 400 clamp(18px,2vw,35px) / 1.5 "OpenSans-Regular";
+  --font-button: 400 18px / 1 "OpenSans-Medium";
+
   --brown: #231d1d;
   --total-white: #ffffff;
   --blue: #1c58df;
   --dark-grey: #2b2b2b;
+}
+
+.h2 {
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  font-size: clamp(36px, 5vw, 120px);
+  font-family: var(--h2);
+  padding: 10px 0;
 }
