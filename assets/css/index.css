@@ -16,6 +16,20 @@
   }
 }
 
+.main {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 20px;
+  max-width: 1240px;
+}
+@media (max-width: 1024px) {
+  .main {
+    gap: 30px;
+  }
+}
+
 .banner {
   height: 100vh;
   min-height: 620px;
@@ -116,20 +130,17 @@
 }
 
 .services {
-  padding-top: 20px;
+  width: 100%;
 }
 .services .services_item {
-  padding: 0 20px;
-  margin: auto;
-  max-width: 1240px;
   display: flex;
   flex-direction: column;
 }
 .services .services_item .services_grid {
-  padding: 50px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
 }
 .services .services_item .services_grid .service {
   display: flex;
@@ -204,12 +215,9 @@
 }
 
 .about {
-  padding-top: 100px;
+  width: 100%;
 }
 .about .about_item {
-  margin: auto;
-  padding: 0 20px;
-  max-width: 1240px;
   display: flex;
   flex-direction: column;
 }
@@ -235,10 +243,7 @@
 }
 
 .vacancies {
-  max-width: 1240px;
-  padding: 0 20px;
-  padding-top: 130px;
-  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -259,10 +264,7 @@
 }
 
 .contact {
-  max-width: 1240px;
-  padding: 0 20px;
-  padding-top: 170px;
-  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -276,6 +278,7 @@
 @media (max-width: 760px) {
   .contact .contact_details .contact_details-ul {
     gap: 10px;
+    flex-direction: column;
   }
 }
 .contact .contact_details .contact_details-ul .contact_details-li {
