@@ -74,6 +74,11 @@
   border-bottom: 1px solid var(--blue);
   transition-duration: 0.3s;
 }
+.header .nav .active {
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
+  transition-duration: 0.3s;
+}
 .header .contacts {
   display: flex;
   width: 45%;

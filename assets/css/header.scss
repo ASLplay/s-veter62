@@ -62,6 +62,12 @@
                 transition-duration: 0.3s;
             }
         }
+
+        .active {
+            color: var(--blue);
+            border-bottom: 1px solid var(--blue);
+            transition-duration: 0.3s;
+        }
     }
     .contacts {
         display: flex;
